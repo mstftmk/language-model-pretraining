@@ -1,0 +1,35 @@
+{
+  "model": {
+    "vocab_size": 4096,
+    "context": 256,
+    "d_model": 384,
+    "n_layers": 6,
+    "n_heads": 6,
+    "d_ff": 1024,
+    "rope_base": 10000.0,
+    "dropout": 0.0
+  },
+  "train": {
+    "train": "../_data/TinyStories/train.bin",
+    "valid": "../_data/TinyStories/valid.bin",
+    "tokenizer": "assets/tokenizer_tinystories_4096.json",
+    "out": "../_runs/base-5000",
+    "d_model": "384",
+    "n_layers": "6",
+    "n_heads": "6",
+    "context": "256",
+    "batch_size": "16",
+    "grad_accum": "2",
+    "max_steps": "5000",
+    "max_minutes": "75.0",
+    "lr": "0.001",
+    "min_lr": "0.0001",
+    "warmup": "200",
+    "weight_decay": "0.1",
+    "grad_clip": "1.0",
+    "eval_every": "250",
+    "eval_batches": "20",
+    "device": "auto",
+    "seed": "0"
+  }
+}

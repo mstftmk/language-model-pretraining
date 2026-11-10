@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language-model-pretraining"
+version = "0.1.0"
+description = "A small GPT-style language model pre-trained from scratch on TinyStories: byte-level BPE, RoPE, RMSNorm, SwiGLU, KV cache"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Mustafa Tomak" }]
+dependencies = ["numpy>=1.24", "regex>=2023.0", "torch>=2.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

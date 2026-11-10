@@ -1,0 +1,7 @@
+{
+  "tokens_scored": 5642752,
+  "loss_nats_per_token": 1.5749,
+  "perplexity": 4.83,
+  "bytes_per_token": 3.988,
+  "bits_per_byte": 0.5698
+}
